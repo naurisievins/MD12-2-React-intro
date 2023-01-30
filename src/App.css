@@ -5,37 +5,57 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.todo_container {
+  background-color:rgb(18, 24, 32);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 20px 50px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo_container__title {
+  margin: 0;
+  padding-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.todo_container__add-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.card {
-  padding: 2em;
+.add-item__btn {
+  align-self: end;
+  margin: 5px 0;
 }
 
-.read-the-docs {
-  color: #888;
+.add-item__input {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.todo_container__list {
+  text-align: start;
+  font-size: 1.2rem;
+  word-wrap: break-word;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list__delete {
+  color: rgb(105, 14, 14);
+  cursor: pointer;
+  float:right;
+  padding-left: 10px;
+  
+}
+
+.list__delete:hover {
+  filter: drop-shadow(0 0 0.75rem crimson);
 }
