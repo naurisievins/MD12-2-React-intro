@@ -52,12 +52,3 @@ button:hover {
   border-color: #fff;
   background-color: #728f6da4;
 }
-
-.list__delete {
-  color: rgb(105, 14, 14);
-  cursor: pointer;
-}
-
-.list__delete:hover {
-  filter: drop-shadow(0 0 0.75rem crimson);
-}
